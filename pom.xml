@@ -11,6 +11,17 @@
 		<springframework>4.1.6.RELEASE</springframework>
 	</properties>
 	<dependencies>
+		<!-- 测试 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${springframework}</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
 		<!-- JSR250支持 -->
 		<dependency>
 			<groupId>javax.annotation</groupId>
