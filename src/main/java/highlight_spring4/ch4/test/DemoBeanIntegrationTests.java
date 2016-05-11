@@ -1,4 +1,4 @@
-package highlight_spring4.ch4;
+package highlight_spring4.ch4.test;
 
 import javax.annotation.Resource;
 

@@ -9,8 +9,70 @@
 		<org.aspectj>1.8.5</org.aspectj>
 		<commons-io>2.5</commons-io>
 		<springframework>4.1.6.RELEASE</springframework>
+		<slf4j>1.7.21</slf4j>
+		<logBack>1.1.7</logBack>
 	</properties>
 	<dependencies>
+		<!-- spring mvc -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${springframework}</version>
+		</dependency>
+		<!-- 其它web依赖 -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.2</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- 事务 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${springframework}</version>
+		</dependency>
+		<!-- 使用slf4j和logBack作为日志 -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>${slf4j}</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+			<version>${logBack}</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-access</artifactId>
+			<version>${logBack}</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${logBack}</version>
+		</dependency>
 		<!-- 测试 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
